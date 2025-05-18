@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { LuTag } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { IoMenu } from "react-icons/io5";
 
 const Header = () => {

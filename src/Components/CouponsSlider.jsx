@@ -30,7 +30,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           {/* microsoft */}
-          <div className=" w-[392px] bg-white p-2 rounded-sm mx-auto my-12">
+          <div className=" w-[392px] bg-white rounded-sm mx-auto my-12">
             {/* img div */}
             <div className="bg-[#ffefe2] ">
               <img src="src/assets/microsoft.webp" alt="" />
@@ -138,7 +138,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           {/* aJhuda */}
-          <div className=" w-[392px] bg-white p-2 rounded-sm mx-auto my-12">
+          <div className=" w-[392px] bg-white rounded-sm mx-auto my-12">
             {/* img div */}
             <div className="bg-[#ffefe2] ">
               <img src="src/assets/ajhuda.webp" alt="ajhuda" />
@@ -191,7 +191,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           {/* LinkedIn */}
-          <div className=" w-[392px] bg-white p-2 rounded-sm mx-auto my-12">
+          <div className=" w-[392px] bg-white rounded-sm mx-auto my-12">
             {/* img div */}
             <div className="bg-[#ffefe2] ">
               <img src="src/assets/linkedin.webp" alt="Linkedin" />
@@ -244,7 +244,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           {/* aws */}
-          <div className=" w-[392px] bg-white p-2 rounded-sm mx-auto my-12">
+          <div className=" w-[392px] bg-white rounded-sm mx-auto my-12">
             {/* img div */}
             <div className="bg-[#ffefe2] ">
               <img src="src/assets/aws.webp" alt="AWS" />
@@ -298,7 +298,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           {/* feedEx */}
-          <div className=" w-[392px] bg-white p-2 rounded-sm mx-auto my-12">
+          <div className=" w-[392px] bg-white  rounded-sm mx-auto my-12">
             {/* img div */}
             <div className="bg-[#ffefe2] ">
               <img src="src/assets/fedx.webp" alt="FeedEx" />
@@ -338,13 +338,13 @@ export default function App() {
             <hr className="border border-slate-200" />
 
             <div className="relative">
+              {/* hide coupon */}
+              <button className=" btn w-full my-6  rounded-full bg-[#1CA2FC] text-white delay-200 z-20 hover:scale-x-[.84] origin-left transition-transform duration-300">
+                Show Coupon
+              </button>
               {/* show coupon */}
               <button className=" absolute top-6  right-0 btn bg-white border border-dashed border-blue-400 rounded-full">
                 95AF
-              </button>
-              {/* hide coupon */}
-              <button className=" btn z-50 w-full my-6  rounded-full bg-[#1CA2FC] text-white delay-200 hover:scale-x-[.84] origin-left transition-transform duration-300">
-                Show Coupon
               </button>
             </div>
           </div>

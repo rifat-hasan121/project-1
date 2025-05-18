@@ -4,7 +4,7 @@ import CouponCards from "./CouponCards";
 
 const PopularCoupons = () => {
   return (
-    <div className="bg-[#f3faff]">
+    <div className="bg-[#f3faff] pb-20">
       <div className="w-11/12 mx-auto py-12 flex justify-between">
         <h3 className="text-4xl font-medium">
           Popular <span className="text-primary">Coupons</span>
