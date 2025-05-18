@@ -4,18 +4,19 @@ import { IoSearchOutline } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <div className="md:flex md:justify-between w-11/12 mx-auto gap-8 bg-[#f5ebe2] rounded-xl py-12 px-2">
+    <div className="md:flex md:justify-between items-center w-11/12 mx-auto bg-[#f5ebe2] rounded-xl py-12 sm:px-2 md:px-4 lg:px-6">
       {/* text div */}
       <div>
-        <h3 className=" text-4xl md:text-6xl font-semibold my-6">
-          Discover The Best <br /> Affiliate
+        <h3 className=" text-4xl sm:text-5xl sm:px-6 md:text-5xl lg:text-6xl font-semibold my-6">
+          Discover The Best Affiliate
           <span className="text-[#FF943D]">Coupons</span>
         </h3>
-        <p className="text-[16px] mb-6">
+        <p className="text-[16px] sm:px-6 mb-6">
           We understand that finding the right Coupons can be a daunting task.
-          That's why we've designed our platform.
+          That's why <br /> we've designed our platform.
         </p>
-        <div className="min-h-16 mb-6 rounded-4xl w-full mx-auto bg-white flex justify-center items-center gap-4 ">
+        {/* search box */}
+        {/* <div className="min-h-16 mb-6 rounded-4xl w-full mx-auto bg-white flex justify-between items-center gap-4 ">
           <div className="ml-6">
             <button className=" font-semibold flex gap-2 items-center border-r-2 border-slate-300 pr-4">
               Category <IoIosArrowDown />
@@ -23,55 +24,57 @@ const Hero = () => {
           </div>
           <div className="flex items-center text-center">
             <div>
-              <input className="w-full" type="text" placeholder="Search here" />
+              <input className="w-fit" type="text" placeholder="Search here" />
             </div>
-            <div className="mr-4 bg-[#FF943D] px-4 py-2 rounded-2xl">
+            <div className="mr-4 sm:right-0 bg-[#FF943D] px-4 py-2 rounded-2xl">
               <IoSearchOutline size={20} style={{ color: "white" }} />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* outline btn */}
-        <div className="flex gap-4 flex-wrap my-6">
-          <button className="btn btn-outline btn-warning rounded-2xl">
-            Browse Coupons
-          </button>
-          <button className="btn btn-outline btn-warning rounded-2xl">
-            Top Coupons
-          </button>
-          <button className="btn btn-outline btn-warning rounded-2xl">
-            Featured Discount
-          </button>
-          <button className="btn btn-outline btn-warning rounded-2xl">
-            Trending Deals
-          </button>
-          <button className="btn btn-outline btn-warning rounded-2xl">
-            Best Deals
-          </button>
-          <button className="btn btn-outline btn-warning rounded-2xl">
-            Exclusive Offers
-          </button>
+        <div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6 w-[700px]">
+            <button className="btn btn-outline btn-warning w-fit rounded-2xl">
+              Browse Coupons
+            </button>
+            <button className="btn btn-outline btn-warning w-fit rounded-2xl">
+              Top Coupons
+            </button>
+            <button className="btn btn-outline btn-warning w-fit rounded-2xl">
+              Featured Discount
+            </button>
+            <button className="btn btn-outline btn-warning w-fit rounded-2xl">
+              Trending Deals
+            </button>
+            <button className="btn btn-outline btn-warning w-fit rounded-2xl">
+              Best Deals
+            </button>
+            <button className="btn btn-outline btn-warning w-fit rounded-2xl">
+              Exclusive Offers
+            </button>
+          </div>
         </div>
       </div>
       {/* img div */}
       <div className="flex gap-2 items-end relative">
         <div className="">
           <img
-            className="rounded-tl-4xl"
+            className="rounded-tl-4xl "
             src="src/assets/banner-index-1.webp"
             alt=""
           />
         </div>
         <div>
           <img
-            className="rounded-tr-4xl"
+            className="rounded-tr-4xl "
             src="src/assets/banner-index-2.webp"
             alt=""
           />
         </div>
       </div>
 
-      <div class="flex items-center gap-3 absolute bg-white p-2 rounded-xl shadow-md w-fit -mt-64">
+      {/* <div class="flex items-center gap-3 absolute bg-white p-2 rounded-xl shadow-md w-fit mt-48  sm:left-34 sm:-mt-[570px]">
         <div class="bg-green-500 text-white p-2 rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -92,9 +95,9 @@ const Hero = () => {
           <p class="text-gray-500 text-[14px]">Total Categories</p>
           <p class="text-xl font-semibold text-gray-800">500+</p>
         </div>
-      </div>
+      </div> */}
       {/* review card */}
-      <div class=" absolute flex items-center gap-3 bg-white shadow-md rounded-xl px-3 py-2 -mt-48 ml-36 w-max">
+      {/* <div class=" absolute flex items-center gap-3 bg-white shadow-md rounded-xl px-3 py-2 -mt-48 ml-36 w-max sm:right-20 sm:-mt-72">
         <div class="bg-orange-400 rounded-full w-10 h-10 flex items-center justify-center">
           <svg
             class="w-5 h-5 text-white"
@@ -116,9 +119,9 @@ const Hero = () => {
           </div>
           <div class="text-sm text-gray-500">AVG Reviews</div>
         </div>
-      </div>
+      </div> */}
       {/* coupon card */}
-      <div class="absolute flex items-center gap-2 bg-white shadow-md rounded-xl px-2 py-2 ml-36 -mt-20 md:-mt-52  w-max">
+      {/* <div class="absolute flex items-center gap-2 bg-white shadow-md rounded-xl px-2 py-2 ml-36 -mt-20 sm:right-20 sm:-mt-28  w-max">
         <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center">
           <svg
             class="w-5 h-5 text-white"
@@ -143,7 +146,7 @@ const Hero = () => {
           <div class="font-semibold text-sm">20% OFF</div>
           <div class="text-[16px] text-gray-500">For All Coupons</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
